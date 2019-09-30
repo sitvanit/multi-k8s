@@ -31,7 +31,7 @@ before_install:
 
 # Run tests
 script:
-  - docker run -e CI=true sitvanit/docker-react npm run test
+  - docker run -e CI=true sitvanit/react-test npm run test
 
 # If tests are successful, run a script to deploy newest images
 # We should write our own deploy script because there is no for kubernetes (as we had for beanstalk)
